@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(229, 57%, 11%);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-image: url("images/bg-desktop.png");
+	background-position-y: 110%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+ 
+}
+
+.archives {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 1em 6em 1em 1em;
+    padding: 2em;
+    padding-right: 5em;
+    
+}
+
+.logo {
+    margin-bottom: 1em;
+}
+
+.icon {
+    background-color:hsl(229, 57%, 11%) ;
+    margin: 0.5em;
+    padding: 1em ;
+    border-radius: 0.5em;
+    height: 3.5em;
+    width: 3.8em;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.progress-container {
+    background-color: #1d2c67;
+    margin-left: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    width: 35em;
+    height: fit-content;
+	align-self: flex-end;
+}
+
+h1 {
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.text  {
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+
+.gb {
+    background-color: white;
+    border-radius: 1em; 
+    position: absolute;
+    right: 32.5em;
+    top: 23.5em;
+    font-weight: 700;
+    padding: 1em;
+    color: gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    z-index: 111;
+}
+
+.gb::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: -1em;
+    right: 0;
+    height: 2em;
+    width: 2em;
+    background-color: #fff;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+
+}
+.gb span {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 700;
+  
+}
+
+
+.progress {
+    background: hsl(229, 57%, 11%);
+    border-radius: 100px;
+    padding: 5px;
+    display: flex;
+    height: 20px;
+    width: 500px;
+}
+  
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    height: 10px;
+    width: 0;
+}
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
